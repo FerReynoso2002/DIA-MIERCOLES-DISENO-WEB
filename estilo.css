@@ -15,7 +15,7 @@ html{
 
 }
 
-/* MENU */
+/*MENU*/
 
 .contenedor-header{
     background-color: black;
@@ -71,12 +71,13 @@ html{
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    display: none;
     
     
 
 }
 
-/* SECCION INICIO*/
+/*INICIO*/
 
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),url(informatica.jpg);
@@ -147,30 +148,37 @@ html{
 
 }
 
-/* SECCION SOBRE MI */
+/*SOBRE MI*/
 
 
 .sobremi{
     background-color: white;
+    margin-bottom: 300px;
     padding: 140px 0 100px 0;
     text-align: center;
+    
 }
 
 .sobremi .contenido-seccion{
     max-width: 1000px;
     margin: auto;
     padding: 0 10px;
+    margin-top: 80px;
+    
+    
 }
 
 .sobremi .contenido-seccion h3{
     text-transform: uppercase;
     font-size: 30px;
+    
 }
 
 .sobremi .contenido-seccion .especial{
     color: black;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 50px;
+    
 
 
 
@@ -202,6 +210,8 @@ html{
     border: 2px solid red;
     line-height: 40px;
     border-radius: 50%;
+    margin-top: 30px;
+    
 
 }
  
@@ -211,16 +221,15 @@ html{
     margin: 8px;
 }
 
- /* SECCION HABILIDADES */
+ /*HABILIDADES*/
 
 .habilidades{
     padding: 80px 0 100px 0;
     text-align: center;
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),url(compus.jpg);
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center center; 
     color: white;
+    
 
 }
 
@@ -229,6 +238,8 @@ html{
     max-width: 1000px;
     margin: auto;
     padding: 0 10px;
+    margin-bottom: 180px;
+    margin-top: 100px;
 }
 
 
@@ -276,15 +287,17 @@ html{
     width: 20px;
     height: 30px;
     margin-right: 2px;
+    
 }
 
 
-/*SECCION RESUMEN*/
+/*RESUMEN*/
 
 .resumen{
     background-color: white;
     padding:  140px 0 100px 0;
     text-align: center;
+    
 }
 
 .resumen .contenido-seccion{
@@ -304,7 +317,7 @@ html{
     text-align: left;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 80px;
 
 
 
@@ -365,3 +378,98 @@ html{
     padding-left: 20px;
 }
 
+/*CONTACTO*/
+
+.contacto{
+    
+    margin-top: 180px;
+    background-color: black;
+    padding: 140px 0 100px 0;
+    color: white;
+    text-align: center;
+    
+}
+
+.contacto .contenido-seccion{
+    
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+    
+}
+
+.contacto .contenido-seccion h3{
+    
+    text-transform: uppercase;
+    font-size: 30px;
+    
+}
+
+.contacto .contenido-seccion .fila{
+    
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+.contacto .contenido-seccion .fila .col{
+    margin-top: 150px;
+    margin-bottom: 400px;
+    background-color: black;
+}
+
+
+.contacto .contenido-seccion .fila .col h2{
+    color: white;
+    
+    
+}
+
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width:800px){
+    .habilidades .contenido-seccion .fila{
+        display: block;
+    }
+    .habilidades .contenido-seccion .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    .habilidades .contenido-seccion .fila{
+        display: block;
+    }
+    .sobremi .contenido-seccion .fila .col{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .resumen .contenido-seccion .info{
+        display: block;
+    }
+    .resumen  .contenido-seccion .info .col{
+        width: 90%;
+        margin: auto;
+    }
+    .resumen .contenido-seccion .info .col .titulo{
+        display: block;
+        text-align: center;
+    }
+    .resumen .contenido-seccion .info .col table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .contacto .contenido-seccion .fila{
+        display: block;
+    }
+}
+
+
+
+
+
+
+    
