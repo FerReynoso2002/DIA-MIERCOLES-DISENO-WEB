@@ -431,13 +431,15 @@ html{
 
 /*RESPONSIVE*/
 
-@media screen and (max-width:800px){
-    .habilidades .contenido-seccion .fila{
+
+@media screen and (max-width:740px){
+    #nav ul{
         display: block;
     }
+    
     .habilidades .contenido-seccion .fila .col{
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
     .habilidades .contenido-seccion .fila{
         display: block;
@@ -465,7 +467,26 @@ html{
     .contacto .contenido-seccion .fila{
         display: block;
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
